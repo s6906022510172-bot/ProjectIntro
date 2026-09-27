@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KMUTNB - รับสมัครนักศึกษาใหม่</title>
+    
+    <!-- เรียกใช้ฟอนต์ Prompt จาก Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- ไฟล์ CSS ของเรา -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ================= ส่วนที่ 1: แถบเมนูด้านบน (Header) ================= -->
+    <header class="header-menu">
+        <div class="container container-header">
+            <!-- ส่วนโลโก้ -->
+            <div class="logo-box">
+                <img src="images/logo_kmutnb.png" alt="โลโก้ มจพ" class="logo-image">
+                <div class="logo-text">
+                    <span class="text-orange-large">KMU<span class="text-green-large">TNB</span></span>
+                    <div class="text-thai-small">
+                        <span>รับสมัครนักศึกษาใหม่</span>
+                        <span>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- ส่วนลิงก์เมนู -->
+            <nav class="menu-links">
+                <ul>
+                    <li><a href="/Index.html" class="active">หน้าแรก</a></li>
+                    <li><a href="/login.html">รับสมัคร</a></li>
+                    <li><a href="/schedule.html">กำหนดการรับสมัคร</a></li>
+                    <li><a href="/contact.html">ติดต่อเรา</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ================= ส่วนที่ 2: แบนเนอร์รูปภาพด้านบน ================= -->
+    <section class="banner-section container">
+        <!-- ข้อความฝั่งซ้าย -->
+        <div class="banner-text">
+            <div class="tag-year">ปีการศึกษา 2570</div>
+            <h1>รับสมัครนักศึกษาใหม่</h1>
+            <p>ค้นหาหลักสูตร ตรวจสอบคุณสมบัติ และสมัครเรียนได้ในที่เดียว สะดวก รวดเร็ว และเป็นระบบ</p>
+            
+            <a href="/login.html" class="button-orange">
+                <!-- เปลี่ยนจากไอคอน FontAwesome เป็นรูปภาพ -->
+                <img src="/images/signin.png" alt="icon" class="icon-small"> 
+                สมัครเรียน
+            </a>
+        </div>
+        
+        <!-- รูปภาพฝั่งขวา -->
+        <div class="banner-image">
+            <img src="/images/kmutnbAI.png" alt="ภาพตัวการ์ตูนนักศึกษา">
+        </div>
+    </section>
+
+    <!-- ================= พื้นหลังสีเทาอ่อนสำหรับเนื้อหาหลัก ================= -->
+    <div class="background-gray">
+        <div class="container">
+            
+            <!-- ================= ส่วนที่ 3: ปุ่มเมนูด่วน 2 ปุ่ม (Quick Actions) ================= -->
+            <div class="quick-menu-row">
+                <!-- ปุ่มที่ 1 -->
+                <a href="/schedule.html" class="box-quick-menu">
+                    <div class="icon-box bg-orange-light">
+                        <!-- เปลี่ยนเป็นรูปภาพไอคอนปฏิทิน -->
+                        <img src="/images/calander-icon.png" alt="ปฏิทิน" class="icon-image">
+                    </div>
+                    <div class="text-quick-menu">
+                        <h3>กำหนดการรับสมัคร</h3>
+                        <p>ดูปฏิทินและขั้นตอนทั้งหมด</p>
+                    </div>
+                </a>
+                
+                <!-- ปุ่มที่ 2 -->
+                <a href="/login.html" class="box-quick-menu">
+                    <div class="icon-box bg-orange-light">
+                        <!-- เปลี่ยนเป็นรูปภาพไอคอนแก้ไข/สมัคร -->
+                        <img src="/images/signin2.png" alt="สมัครเรียน" class="icon-image">
+                    </div>
+                    <div class="text-quick-menu">
+                        <h3>สมัครเรียน</h3>
+                        <p>กรอกข้อมูลสมัครผ่านระบบออนไลน์</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- ================= ส่วนที่ 4: กล่องข้อมูลหลัก (ไทม์ไลน์ + ค้นหา) ================= -->
+            <div class="main-content-row">
+                
+                <!-- 4.1 กล่องไทม์ไลน์กำหนดการ -->
+                <div class="box-content box-timeline">
+                    <div class="box-header">
+                        <h2>กำหนดการสำคัญ ปีการศึกษา 2570</h2>
+                        <a href="/schedule.html" class="link-orange-text">ดูทั้งหมด</a>
+                    </div>
+                    
+                    <div class="timeline-steps">
+                        <!-- ขั้นตอนที่ 1 -->
+                        <div class="step-item">
+                            <div class="circle-number active">1</div>
+                            <h4>รับสมัคร</h4>
+                            <p>1 พ.ย. 2569 - 15 ก.พ. 2570</p>
+                        </div>
+                        <div class="line-connect"></div>
+                        <!-- ขั้นตอนที่ 2 -->
+                        <div class="step-item">
+                            <div class="circle-number active">2</div>
+                            <h4>สอบคัดเลือก</h4>
+                            <p>7 - 8 มี.ค. 2570</p>
+                        </div>
+                        <div class="line-connect"></div>
+                        <!-- ขั้นตอนที่ 3 -->
+                        <div class="step-item">
+                            <div class="circle-number active">3</div>
+                            <h4>ประกาศผลสอบ</h4>
+                            <p>20 มี.ค. 2570</p>
+                        </div>
+                        <div class="line-connect"></div>
+                        <!-- ขั้นตอนที่ 4 -->
+                        <div class="step-item">
+                            <div class="circle-number active">4</div>
+                            <h4>ยืนยันสิทธิ์</h4>
+                            <p>21 - 25 มี.ค. 2570</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4.2 กล่องค้นหาหลักสูตร -->
+                <div class="box-content box-search">
+                    <h2>ค้นหาหลักสูตรที่เปิดรับ</h2>
+                    <form action="#" class="form-search">
+                        <div class="input-group">
+                            <select name="faculty">
+                                <option value="">เลือกคณะ/วิทยาลัย</option>
+                                <option value="">คณะวิศกรรมศาสตร์</option>
+                                <option value="">คณะครุศาสตร์อุตหกรรม</option>
+                                <option value="">วิทยาลัยเทคโนโลยีอุตสาหกรรม</option>
+                                <option value="">คณะวิทยาศาสตร์ประยุกต์</option>
+                                <option value="">คณะอุตหกรรมเกษรตรดิจิทัล</option>
+                                <option value="">คณะเทคโนโลยีการจัดการอุตสาหกรรม</option>
+                                <option value="">คณะเทคโนโลยีสารสนเทศและนวัตกรรมดิจิทัล</option>
+                                <option value="">คณะศิลปศาสตร์ประยุกต์</option>
+                                <option value="">บัณฑิตวิทยาลัยวิศวกรรมศาสตร์นานาชาติสิรินธร ไทย-เยอรมัน</option>
+                                <option value="">บัณฑิตวิทยาลัย</option>
+                                <option value="">คณะสถาปัตยกรรมและการออกแบบ</option>
+                                <option value="">คณะวิทยาศาสตร์ พลังงานและสิ่งแวดล้อม</option>
+                                <option value="">คณะบริหารธุรกิจ</option>
+                                <option value="">วิทยาลัยนานาชาติ</option>
+                                <option value="">คณะพัฒนาธุรกิจและอุตสาหกรรม</option>
+                                <option value="">คณะบริหารธุรกิจและอุตสาหกรรมบริการ</option>
+                                <option value="">อุทยานเทคโนโลยี มจพ. </option>
+                            </select>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-group half">
+                                <select name="department">
+                                    <option value="">เลือกภาควิชา</option>
+                                    <option value="">วิศวกรรมการผลิตและหุ่นยนต์</option>
+                                    <option value="">วิศวกรรมไฟฟ้าและคอมพิวเตอร์</option>
+                                    <option value="">วิศวกรรมเคมี</option>
+                                    <option value="">วิศวกรรมขนถ่ายวัสดุและโลจิสติกส์</option>
+                                    <option value="">วิศวกรรมเครื่องมือวัดและพลังงานไฟฟ้า</option>
+                                    <option value="">วิศวกรรมโยธา</option>
+                                    <option value="">วิศวกรรมอุตสากร</option>
+                                </select>
+                            </div>
+                            <div class="input-group half">
+                                <select name="level">
+                                    <option value="">เลือกระดับการศึกษา</option>
+                                    <option value="">ประกาศนียบัตรวิชาชีพ</option>
+                                    <option value="">ประกาศนียบัตรวิชาชีพชั้นสูง</option>
+                                    <option value="">อนุปริญญา</option>
+                                    <option value="">ปริญญาตรี 4 ปี / 5 ปี</option>
+                                    <option value="">ปริญญาตรีต่อนเนื่อง 2-3 ปี</option>
+                                    <option value="">ปริญญาตรีเทียบโอน 2-3 ปี</option>
+                                    <option value="">ประกาศนียบัตรบัณฑิต</option>
+                                    <option value="">ปริญญาโท</option>
+                                    <option value="">ปริญญาเอก</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" class="button-orange button-full">
+                            <img src="/images/search.png" alt="ค้นหา" class="icon-small"> ค้นหาหลักสูตร
+                        </button>
+                    </form>
+                </div>
+                
+            </div>
+
+            <!-- ================= ส่วนที่ 5: ข่าวประชาสัมพันธ์ ================= -->
+            <div class="news-section">
+                <h2>ข่าวประชาสัมพันธ์</h2>
+                <div class="news-row">
+                    
+                    <!-- ข่าวที่ 1 -->
+                    <div class="box-news">
+                        <div class="icon-box bg-orange-light">
+                            <!-- ไอคอนโทรโข่ง -->
+                            <img src="/images/megaphone.png" alt="ข่าว" class="icon-image">
+                        </div>
+                        <div class="news-text">
+                            <span class="news-date text-orange">15 พ.ย. 2569</span>
+                            <h4>เปิดรับสมัครนักศึกษาใหม่ ปีการศึกษา 2570</h4>
+                            <p>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ เปิดรับสมัครนักศึกษาใหม่ระดับปริญญาตรี ประจำปีการศึกษา 2570</p>
+                        </div>
+                    </div>
+                    
+                    <!-- ข่าวที่ 2 -->
+                    <div class="box-news">
+                        <div class="icon-box bg-green-light">
+                            <!-- ไอคอนเอกสาร -->
+                            <img src="/images/document.png" alt="เอกสาร" class="icon-image">
+                        </div>
+                        <div class="news-text">
+                            <span class="news-date text-green">10 พ.ย. 2569</span>
+                            <h4>ประกาศผลผู้ผ่านสิทธิ์ TCAS รอบที่ 1</h4>
+                            <p>ผู้สมัครที่ทำการคัดเลือก TCAS รอบที่ 1 Portfolio สามารถทำการตรวจสอบสิทธิ์และรายละเอียดได้ที่นี่</p>
+                        </div>
+                    </div>
+                    
+                    <!-- ข่าวที่ 3 -->
+                    <div class="box-news">
+                        <div class="icon-box bg-gray-light">
+                            <!-- ไอคอนเหรียญรางวัล -->
+                            <img src="/images/award-icon.png" alt="ทุนการศึกษา" class="icon-image">
+                        </div>
+                        <div class="news-text">
+                            <span class="news-date text-gray">2 พ.ย. 2569</span>
+                            <h4>ทุนการศึกษาสำหรับนักศึกษาใหม่</h4>
+                            <p>รวบรวมทุนการศึกษาสำหรับนักศึกษาใหม่ประจำปี 2570 ทั้งทุนเรียนดีและทุนสร้างโอกาส</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ================= ส่วนที่ 6: ด้านล่างสุดของเว็บ (Footer) ================= -->
+    <footer class="footer-section">
+        <div class="container footer-columns">
+            <div class="footer-col info-col">
+                <h3>กลุ่มงานรับเข้าศึกษา มจพ.</h3>
+                <p>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้า<br>พระนครเหนือ 1518 ถ.ประชาราษฎร์ 1<br>แขวงวงศ์สว่าง เขตบางซื่อ กรุงเทพฯ 10800</p>
+                <p>โทร. 02-555-2000 ต่อ 1626</p>
+                <p>อีเมล: admission@kmutnb.ac.th</p>
+            </div>
+            <div class="footer-col">
+                <h3>ลิงก์สำคัญ</h3>
+                <ul>
+                    <p><a href="https://www.kmutnb.ac.th/" target="_blank" rel="noopener noreferrer"> มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ </a></p>
+                    <p><a href="https://acdserv.kmutnb.ac.th/" target="_blank" rel="noopener noreferrer">กองบริการการศึกษา</a></p>
+                    <p><a href="https://sa.op.kmutnb.ac.th/" target="_blank" rel="noopener noreferrer">กองกิจการนักศึกษา</a></p>
+                    <p><a href="https://reg.kmutnb.ac.th/registrar/applogin" target="_blank" rel="noopener noreferrer">ค่าใช้จ่ายการศึกษา</a></p>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>ช่วยเหลือ</h3>
+                <ul>
+                    <p>คู่มือการสมัครเรียน</p>
+                    <p>คำถามที่พบบ่อย (FAQ)</p>
+                    <p>นโยบายความเป็นส่วนตัว</p>
+                    <p>เงื่อนไขการใช้งาน</p>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>ติดตามเรา</h3>
+                <div class="social-icons">
+                    <!-- ไอคอน Social เป็นรูปภาพ -->
+                    <a href="https://www.facebook.com/admission.kmutnb" target="_blank" rel="noopener noreferrer"><img src="/images/Facebook_logo.png" alt="Facebook"></a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer-copyright">
+                <p>© 2024 King Mongkut's University of Technology North Bangkok. All rights reserved.</p>
+                <p>ออกแบบและพัฒนาโดย กลุ่มงานพัฒนาระบบรับสมัครเรียน</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

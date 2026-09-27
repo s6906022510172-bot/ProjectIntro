@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เข้าสู่ระบบ - KMUTNB</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ================= แถบเมนูด้านบน (Header) ================= -->
+    <header class="header-menu">
+        <div class="container container-header">
+            <div class="logo-box">
+                <img src="/images/logo_kmutnb.png" alt="โลโก้ มจพ" class="logo-image">
+                <div class="logo-text">
+                    <span class="text-orange-large">KMU<span class="text-green-large">TNB</span></span>
+                    <div class="text-thai-small">
+                        <span>รับสมัครนักศึกษาใหม่</span>
+                        <span>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</span>
+                    </div>
+                </div>
+            </div>
+            
+            <nav class="menu-links">
+                <ul>
+                    <li><a href="index.html">หน้าแรก</a></li>
+                    <!-- ย้าย class="active" มาไว้ที่ "รับสมัคร" แทน -->
+                    <li><a href="login.html" class="active">รับสมัคร</a></li>
+                    <li><a href="/schedule.html">กำหนดการรับสมัคร</a></li>
+                    <li><a href="/contact.html">ติดต่อเรา</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ================= ส่วนเนื้อหาหน้า Login ================= -->
+    <div class="login-wrapper">
+        <h2 class="login-title">เข้าสู่ระบบ</h2>
+        
+        <!-- ฟอร์มเข้าสู่ระบบ -->
+        <form action="#" class="form-login">
+            <div class="form-group-vertical">
+                <label>เลขประจำตัวประชาชน</label>
+                <input type="text" class="input-field" placeholder="เลขประจำตัวประชาชน" maxlength="13" inputmode="numeric" pattern="[0-9]*" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+            </div>
+            
+            <div class="form-group-vertical">
+                <label>รหัสผ่าน</label>
+                <div class="input-with-icon">
+                    <!-- 1. ซ่อน Checkbox ไว้ และตั้ง id ให้ตรงกับ label -->
+                    <input type="checkbox" id="toggle-pwd-1" class="hidden-checkbox">
+                    
+                    <!-- 2. ใช้ type="text" แทน password และใส่คลาส css-password -->
+                    <input type="text" class="input-field css-password" placeholder="รหัสผ่าน">
+                    
+                    <!-- 3. ใช้ Label ครอบรูปตาของคุณ เมื่อกดที่รูปนี้ จะไปติ๊ก checkbox ด้านบน -->
+                    <label for="toggle-pwd-1" class="icon-label">
+                        <img src="/images/eye-icon.png" alt="เปิด/ปิดรหัส">
+                    </label>
+                </div>
+            </div>
+                        
+            <button type="submit" class="button-brown button-full">Login</button>
+        </form>
+
+        <!-- ลิงก์ด้านล่างฟอร์ม -->
+        <div class="login-links">
+            <a href="/resetpass.html" class="link-brown">ลืมรหัสผ่านหรือไม่?</a>
+            <p>สร้างบัญชีผู้ใช้งาน <a href="register.html" class="link-brown">คลิกที่นี่</a></p>
+        </div>
+    </div>
+
+    <!-- ================= Footer ================= -->
+    <footer class="footer-section">
+        <div class="container footer-columns">
+            <div class="footer-col info-col">
+                <h3>กลุ่มงานรับเข้าศึกษา มจพ.</h3>
+                <p>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้า<br>พระนครเหนือ 1518 ถ.ประชาราษฎร์ 1<br>แขวงวงศ์สว่าง เขตบางซื่อ กรุงเทพฯ 10800</p>
+                <p>โทร. 02-555-2000 ต่อ 1626</p>
+                <p>อีเมล: admission@kmutnb.ac.th</p>
+            </div>
+            <div class="footer-col">
+                <h3>ลิงก์สำคัญ</h3>
+                <ul>
+                    <p><a href="https://www.kmutnb.ac.th/" target="_blank" rel="noopener noreferrer"> มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ </a></p>
+                    <p><a href="https://acdserv.kmutnb.ac.th/" target="_blank" rel="noopener noreferrer">กองบริการการศึกษา</a></p>
+                    <p><a href="https://sa.op.kmutnb.ac.th/" target="_blank" rel="noopener noreferrer">กองกิจการนักศึกษา</a></p>
+                    <p><a href="https://reg.kmutnb.ac.th/registrar/applogin" target="_blank" rel="noopener noreferrer">ค่าใช้จ่ายการศึกษา</a></p>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>ช่วยเหลือ</h3>
+                <ul>
+                    <p>คู่มือการสมัครเรียน</p>
+                    <p>คำถามที่พบบ่อย (FAQ)</p>
+                    <p>นโยบายความเป็นส่วนตัว</p>
+                    <p>เงื่อนไขการใช้งาน</p>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>ติดตามเรา</h3>
+                <div class="social-icons">
+                    <!-- ไอคอน Social เป็นรูปภาพ -->
+                    <a href="https://www.facebook.com/admission.kmutnb" target="_blank" rel="noopener noreferrer"><img src="/images/Facebook_logo.png" alt="Facebook"></a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer-copyright">
+                <p>© 2024 King Mongkut's University of Technology North Bangkok. All rights reserved.</p>
+                <p>ออกแบบและพัฒนาโดย กลุ่มงานพัฒนาระบบรับสมัครเรียน</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
